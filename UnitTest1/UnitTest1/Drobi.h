@@ -3,7 +3,7 @@
 #include <string>
 #include <cmath>
 
-#define Pi 3.14159265358979323
+#define Pi 3.141592653589793238462643383279
 
 using namespace std;
 
@@ -15,23 +15,24 @@ public:
 	TComplex(float deist, float mnim) : deist(deist), mnim(mnim) {
 		;
 	}
-	float getReal() const;
-	float getMnim() const;
-	float ugolG() const;
-	float ugolR() const;
-	TComplex Add(TComplex other) const;
+	float getReal();
+	float getMnim();
+	float ugolG();
+	float ugolR();
+	TComplex Add(TComplex other);
 	TComplex copy();
-	TComplex minus(const TComplex other);
-	TComplex cut(const TComplex other);
-	TComplex squer() const;
-	TComplex multiplie(const TComplex other) const;
-	TComplex obratnoe() const;
-	string strReal() const;
-	string strMnim() const;
-	string str() const;
-	TComplex Step(int n) const;
-	TComplex Squer(int n, int k) const;
-	bool Equal(const TComplex a) const;
-	bool more(const TComplex other)const;
+	TComplex minus(TComplex other);
+	TComplex cut(TComplex other);
+	TComplex squer();
+	TComplex multiplie(TComplex other);
+	TComplex obratnoe();
+	string strReal();
+	string strMnim();
+	string str();
+	TComplex minus();
+	TComplex Step(int n);
+	TComplex Squer(int n, int k);
+	bool Equal(TComplex a);
+	bool more(TComplex other);
 };
 
