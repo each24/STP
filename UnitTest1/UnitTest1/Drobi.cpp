@@ -75,7 +75,7 @@ TComplex TComplex::Step(int n) {
 	TComplex a = *this;
 	float r = sqrtf(a.deist * a.deist + a.mnim * a.mnim);
 	r = step(r, n);
-	TComplex c(r*cos(a.ugolR()*n), sin(a.ugolR()*n));
+	TComplex c(r*cos(a.ugolR()*n), r*sin(a.ugolR()*n));
 	return c;
 }
 

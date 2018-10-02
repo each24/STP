@@ -113,8 +113,8 @@ namespace UnitTest1
 			// TODO: Разместите здесь код своего теста
 			TComplex a(1.0, 3.0);
 			a = a.Step(2);
-			Assert::AreEqual(a.getReal(), float(-8));
-			Assert::AreEqual(a.getMnim(), float(6));
+			Assert::AreEqual(a.getReal(), float(-8), float(0.01));
+			Assert::AreEqual(a.getMnim(), float(6), float(0.01));
 		}
 
 	};
